@@ -1,0 +1,338 @@
+body {
+    background-color: #f2f2f2;
+    font-family: "Forefont";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Sam Plimsoll";
+    font-weight: 300;
+    color: #333;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    color: #f44242;
+}
+
+a:hover, a:focus {
+    color: #f44242;
+    text-decoration: none;
+    outline: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #ff7878;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#headerwrap {
+    background: url(../img/fon.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width:  100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+#headerwrap h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#headerwrap h2 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.w {
+    padding-top: 35px;
+}
+
+.w h4 {
+    font-size: 25px;
+}
+
+.w h3 {
+    font-size: 35px;
+}
+
+#dg {
+    background: #e0e0e0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#dg h4 {
+    font-size: 40px;
+}
+
+ .tilt {
+     -webkit-transition: all 0.5s ease;
+ }
+
+ .tilt:hover {
+     -webkit-transform: rotate(-10deg);
+ }
+
+ .wb {
+     padding-top: 35px;
+     margin-bottom: 0;
+ }
+
+ .wb h4 {
+     font-size: 25px;
+ }
+
+ #lg {
+     background: #ebebeb;
+     padding-top: 70px;
+     padding-bottom: 70px;
+     text-align: center;
+ }
+ #lg h4 {
+     font-size: 45px;
+ }
+
+ #r {
+     background: #ff7878;
+     padding-top: 70px;
+     padding-bottom: 70px;
+ }
+ #r h4 {
+     color: white;
+     font-size: 45px;
+ }
+
+ #r p {
+     color: white;
+ }
+
+ #f {
+     background: #2d2d2d;
+     padding-top: 30px;
+     padding-bottom: 20px;
+ }
+
+ #f i {
+     color: #bdbdbd;
+     font-size: 30px;
+     padding: 20px;
+ }
+
+ #f i:hover {
+     color: #ff7878;
+ }
+
+ .carousel {
+     margin-top: 120px;
+     width: 100%;
+ }
+
+.caption-slider1 {
+    padding-bottom: 150px;
+    font-size: 110px;
+    font-weight: bold;
+    color: #ff7878;
+}
+
+.caption-slider2 {
+    padding-bottom: 190px;
+    font-size: 110px;
+    font-weight: bold;
+    color: white;
+}
+
+.caption-slider3 {
+    padding-bottom: 130px;
+    font-size: 110px;
+    font-weight: bold;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    font-family: 'Lato' sans-serif;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#lg img {
+    -webkit-filter: grayscale(100%);
+}
+
+#lg img:hover, img:focus {
+    -webkit-filter: grayscale(0%);
+}
+
+
+.logo {
+    width: 9%;
+}
+
+
+.logo-text {
+    font-size: 30px;
+}
+
+.wid {
+    margin: 40px 0 40px 0;
+}
+.wid h4 {
+    font-size: 30px;
+}
+
+.news {
+    margin-top: 150px;
+}
+
+/*--------------------weather----------------------*/
+
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#weather {
+    margin-top: 50px;
+    font-family: Verdana;
+    color: #e0e0e0;
+    text-align: center;
+    background-color: #2d6987;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#noweather {
+    height: 160px;
+    background-color: #2d6987;
+    color: #e0e0e0;
+    font-family: Verdana;
+    text-align: center;
+    padding-top: 60px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+#weather h2 {
+    color: #e0e0e0;
+    font-size: 40px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.alert {
+    padding: 7px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 0;
+    height: 40px;
+}

@@ -1,0 +1,6 @@
+---
+applications:
+ - name: Proger
+   memory: 128M
+   host: proger
+   domain: eu-gb.mybluemix.net

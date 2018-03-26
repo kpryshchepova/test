@@ -1,0 +1,36 @@
+{
+  "name": "proger",
+  "main": "server.js",
+  "description": "An introduction to developing Node.js apps on the Bluemix platform",
+  "version": "0.1.1",
+  "private": false,
+  "engines": {
+    "node": "8.x",
+    "npm": "5.4.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpryshchepova/test.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.x",
+    "cfenv": "^1.0.x",
+    "cloudant": "^1.7.x",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.x",
+    "ejs": "2.5.x"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-watch": "^4.3.11",
+    "jquery": "^3.3.1"
+  },
+  "author": "IBM Corp",
+  "license": "Apache-2.0"
+}
