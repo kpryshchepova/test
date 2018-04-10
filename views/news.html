@@ -1,45 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/main.css">
+    <% include parts/head %>
 </head>
 <body>
+        
+<%- include("parts/header", {selectedTab: "news"}) %>
+        
+<% include parts/contacts %>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a id="logo-img" class="navbar-left logo-text" href="#"><img class="logo" src="../static/img/logo.png">ROGER</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index">Домой</a></li>
-                <li><a href="index#info">Про нас</a></li>
-                <li><a href="index#dg">Работы</a></li>
-                <li><a href="gallery">Галерея</a></li>
-                <li><a href="news">Новости</a></li>
-                <li><a href="mailto: KPryshchepava@gomel.iba.by"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div id="myNav" class="overlay">
-    <a class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        <a>E-mail: IT_company@gmail.com</a>
-        <a>Phone number: +375(44)569-13-89</a>
-        <a>Adress: Wall Street 23</a>
-    </div>
-</div>
 <div class="news">
     <div class="container">
         <div class="row centered">
@@ -68,49 +37,9 @@
             </div>
         </div>
     </div>
-    <div id="lg">
-        <div class="container">
-            <div class="row centered">
-                <h4>Партнеры</h4>
-                <div class="col-lg-2 col-lg-offset-1">
-                    <img src="static/img/c01.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="static/img/c02.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="static/img/c03.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="static/img/c04.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="static/img/c05.gif" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="r">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h4>Разработка сайтов на профессиональном уровне</h4>
-                    <br>
-                    <h4 onclick="openNav()">Наши контакты</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="f">
-        <div class="container">
-            <div class="row centered">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-vk"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+
+<% include parts/footer %>
+
 <script src="js/jquery/jquery.min.js"></script>
 <script src="static/js/jquery.simpleWeather.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>

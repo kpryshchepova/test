@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo-img" class="navbar-left logo-text" href="index"><img class="logo" src="static/img/logo.png">ROGER</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="<% if(selectedTab == 'index') {%>active<%} %>"><a href="index">Домой</a></li>
+                <li><a href="index#info">Про нас</a></li>
+                <li><a href="index#work">Работы</a></li>
+                <li class="<% if(selectedTab == 'gallery') {%>active<%} %>"><a href="gallery">Галерея</a></li>
+                <li class="<% if(selectedTab == 'news') {%>active<%} %>"><a href="news">Новости</a></li>
+                <li><a href="mailto: KPryshchepava@gomel.iba.by"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li class="<% if(selectedTab == 'login') {%>active<%} %>"><a href="login"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

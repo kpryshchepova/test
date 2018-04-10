@@ -1,6 +1,6 @@
 ---
 applications:
- - name: Proger
-   memory: 128M
-   host: proger
+ - name: KPryshchepova
+   memory: 64M
+   host: KPryshchepova
    domain: eu-gb.mybluemix.net

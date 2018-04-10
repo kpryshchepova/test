@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #333;
 }
 
+
 p {
     line-height: 28px;
     margin-bottom: 25px;
@@ -26,6 +27,10 @@ p {
 
 a {
     color: #f44242;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #ff7878;
 }
 
 a:hover, a:focus {
@@ -53,10 +58,6 @@ hr {
 .navbar-inverse {
     background: #2d2d2d;
     border-color: #2d2d2d;
-}
-
-.navbar-inverse .navbar-nav > .active > a {
-    background-color: #ff7878;
 }
 
 .navbar-inverse .navbar-brand {
@@ -96,6 +97,11 @@ hr {
     text-transform: uppercase;
 }
 
+.fa {
+    font-size: 17px;
+    cursor: pointer;
+}
+
 .w {
     padding-top: 35px;
 }
@@ -108,14 +114,14 @@ hr {
     font-size: 35px;
 }
 
-#dg {
+#work {
     background: #e0e0e0;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
 }
 
-#dg h4 {
+#work h4 {
     font-size: 40px;
 }
 

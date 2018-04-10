@@ -14,11 +14,14 @@ app.use('/js/jquery', express.static(path.join(__dirname, '/node_modules/jquery/
 app.use('/css/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));
 app.use('/js/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));
 app.use('/css/fonts', express.static(path.join(__dirname, '/node_modules/bootstrap/fonts')));
+app.use('/parts', express.static(path.join(__dirname, '/views/parts')));
 
 app.get('/', routes.index);
 app.get('/index', routes.index);
 app.get('/gallery', routes.gallery);
 app.get('/news', routes.news);
+app.get('/login', routes.login);
+app.get('/registry', routes.registry);
 
 var port = process.env.PORT || 3000
 app.listen(port, function() {
