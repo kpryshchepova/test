@@ -22,14 +22,21 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.x",
     "ejs": "2.5.x",
-	"jquery": "^3.3.1",
-	"bootstrap": "^3.3.7"
+    "jquery": "^3.3.1",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.x.x",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "nano": "^6.4.3",
+    "request": "^2.85.0"
   },
   "author": "IBM Corp",
   "license": "Apache-2.0"

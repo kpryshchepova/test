@@ -11,7 +11,7 @@ exports.news = function(req, res){
   };
 
 exports.login = function(req, res){
-    res.render('login', { title: 'Login' });
+    res.render('login', { title: 'Login'});
   };
 
 exports.registry = function(req, res){

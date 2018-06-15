@@ -15,6 +15,9 @@ h1,h2,h3,h4,h5,h6 {
     color: #333;
 }
 
+.warn {
+    background-color: #2d6987;
+}
 
 p {
     line-height: 28px;
@@ -68,7 +71,7 @@ hr {
 }
 
 #headerwrap {
-    background: url(../img/fon.jpg) no-repeat center top;
+    background: url(../../img/fon.jpg) no-repeat center top;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
@@ -341,4 +344,56 @@ li {
     transition: opacity 0.6s;
     margin-bottom: 0;
     height: 40px;
+}
+
+/*------------------------Login-------------------------*/
+.login {
+    margin: 10px auto;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 200px;
+}
+ h3 {
+     color: black;
+     margin-top: 200px;
+     font-size: 26px;
+     padding-top: 5px;
+ }
+
+.btn_lgn {
+    margin-top: 5px;
+    background-color: #f44242;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+}
+
+.login input {
+    border-radius: 7px;
+    width: 80%;
+    margin: 20px auto;
+}
+/*--------------------Registry--------------------------*/
+
+.registr {
+    margin: 10px auto;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 300px;
+}
+
+.btn_rgstr {
+    margin-top: 10px;
+    background-color: #f44242;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+}
+
+.registr input {
+    border-radius: 7px;
+    width: 80%;
+    margin: 20px auto;
 }

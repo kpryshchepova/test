@@ -24,13 +24,37 @@
 <div class="container">
     <div class="row">
         <div class="centered">
-                <h1>Добро пожаловать!</h1>
+            <h3>Вход!</h3>
+            <form class="login" method="post" name="login">
+                <div class="fail"></div>
+                <input class="form-control" name="username" placeholder="E-mail" required>
+                <input class="form-control" name="userpass" type="password" placeholder="Пароль" required>
+                <button type="submit" class="btn btn_lgn">Войти</button>
+            </form>
         </div>
     </div>
 </div>
-
-
 <script src="js/jquery/jquery.min.js"></script>
+<script>
+    $("form").submit(function(err) {
+             
+             err.preventDefault();
+             var Form = document.forms["login"];
+             var username = Form.elements["username"].value;
+             var userpass = Form.elements["userpass"].value;
+              
+             $.ajax({
+                 type: "POST",
+                 url: "/log",
+                 data: JSON.stringify({name: username, password: userpass}),
+                 dataType: "json",
+                 contentType: "application/json",
+                 success: function(data){ 
+                     console.log(data);
+                     },
+                 });
+         });
+</script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

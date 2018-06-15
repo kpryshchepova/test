@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include parts/head %>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <a id="logo-img" class="navbar-left logo-text"><img class="logo" src="static/img/logo.png">ROGER</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="centered">
+            <h3>Регистрация</h3>
+            <form class="registr" method="post" name="reg">
+                <input class="form-control" name="user" placeholder="Имя" required>
+                <input class="form-control" name="email" placeholder="E-Mail" required>
+                <input class="form-control" name="password" type="password" placeholder="Пароль" required>
+                <input class="form-control" name="country" placeholder="Страна">
+                <input type="submit" id="button" class="btn btn_rgstr" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/jquery/jquery.min.js"></script>
+<script>
+    $("form").submit(function(err) {
+             
+             err.preventDefault();
+             var Form = document.forms["reg"];
+             var name = Form.elements["user"].value;
+             var mail = Form.elements["email"].value;
+             var pass = Form.elements["password"].value;
+             var country = Form.elements["country"].value;
+              
+             $.ajax({
+                 type: "POST",
+                 url: "/registr",
+                 data: JSON.stringify({_id: mail, name: name, mail: mail, password: pass, country : country}),
+                 dataType: "json",
+                 contentType: "application/json",
+                 success: function(data){ 
+                     console.log(data);
+                     },
+                 error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                 }
+            });
+         });
+</script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
