@@ -25,10 +25,10 @@
     <div class="row">
         <div class="centered">
             <h3>Вход!</h3>
-            <form class="login" method="post" name="login">
-                <div class="fail"></div>
-                <input class="form-control" name="username" placeholder="E-mail" required>
-                <input class="form-control" name="userpass" type="password" placeholder="Пароль" required>
+            <form class="login" method="post" id="logform" name="login">
+                <div id="fail"></div>
+                <input class="form-control usern" name="username" placeholder="E-mail" required autocomplete="off">
+                <input class="form-control userp" name="userpass" type="password" placeholder="Пароль" required autocomplete="off">
                 <button type="submit" class="btn btn_lgn">Войти</button>
             </form>
         </div>
@@ -47,11 +47,20 @@
                  type: "POST",
                  url: "/log",
                  data: JSON.stringify({name: username, password: userpass}),
-                 dataType: "json",
+                 dataType: "text",
                  contentType: "application/json",
-                 success: function(data){ 
-                     console.log(data);
-                     },
+                 success: function fh() {
+                     //alert("sgsdfgd");
+                     window.location = "/index";
+                 },
+                 error: function fail(){
+                    //alert('error!');
+                    var fail = document.createElement("div");
+                    fail.className = "alert alert-danger";
+                    fail.innerHTML = "Invalid login or password.";
+                    document.getElementById("logform").replaceChild(fail, document.getElementById("fail"));
+                    //document.getElementById("fail").appendChild(fail);
+                    }
                  });
          });
 </script>

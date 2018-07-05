@@ -2701,8 +2701,14 @@ li {
      padding-top: 5px;
  }
 
+ .alert {
+    width: 95%;
+    margin: 10px auto;
+}
+
 .btn_lgn {
     margin-top: 5px;
+    margin-bottom: 10px;
     background-color: #f44242;
     color: white;
     font-weight: bold;
@@ -2712,8 +2718,9 @@ li {
 .login input {
     border-radius: 7px;
     width: 80%;
-    margin: 20px auto;
+    margin: 25px auto 15px;
 }
+
 /*--------------------Registry--------------------------*/
 
 .registr {
@@ -2721,7 +2728,7 @@ li {
     border: 1px solid #afafaf;
     border-radius: 10px;
     width: 300px;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .btn_rgstr {

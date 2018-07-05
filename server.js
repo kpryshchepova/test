@@ -22,15 +22,19 @@ app.use('/js/bootstrap', express.static(path.join(__dirname, '/node_modules/boot
 app.use('/css/fonts', express.static(path.join(__dirname, '/node_modules/bootstrap/fonts')));
 app.use('/parts', express.static(path.join(__dirname, '/views/parts')));
 
+var username;
+
 app.post('/registr', jsonParser, function (req, res) {
     if(!req.body) 
         return res.sendStatus(400);
     console.log(req.body); 
 
     db.insert(req.body, function(err, body) {
-        if (!err)
+        if (!err) {
           console.log(body);
-          else console.log("Такой e-mail уже используется!");
+          res.sendStatus(200);
+        }
+          else res.sendStatus(400);
     });
 })
 
@@ -40,23 +44,31 @@ app.post('/log', jsonParser, function (req, res) {
         if (!err) {
             var pass = body.password;
             if(pass == req.body.password){
-                console.log(pass);
+                //console.log(req.body);
+                //console.log(pass);
+                username = body.name;
+                res.sendStatus(200);
             }
             else {
-                console.log("Проверьте пароль!");
-                //res.sendStatus(404);
+                //console.log("Проверьте пароль!");
+                res.sendStatus(404);
             }
         }
         else {
-            console.log("Проверьте логин!");
-            //res.sendStatus(404);
+            //console.log("Проверьте логин!");
+            res.sendStatus(404);
         }
     }));
-})
+})  
 
 
 app.get('/', routes.login);
-app.get('/index', routes.index);
+//app.get('/index', routes.index);
+app.get('/index', function(req, res) {
+    res.render('index', {
+        user: username
+    });
+});
 app.get('/gallery', routes.gallery);
 app.get('/news', routes.news);
 /*app.get('/login', function(req, res) {

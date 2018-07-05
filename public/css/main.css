@@ -36,6 +36,7 @@ a {
     background-color: #ff7878;
 }
 
+
 a:hover, a:focus {
     color: #f44242;
     text-decoration: none;
@@ -352,7 +353,7 @@ li {
     border: 1px solid #afafaf;
     border-radius: 10px;
     width: 300px;
-    min-height: 200px;
+    min-height: 300px;
 }
  h3 {
      color: black;
@@ -360,6 +361,11 @@ li {
      font-size: 26px;
      padding-top: 5px;
  }
+
+ .alert .alert-danger {
+    width: 80%;
+    margin-top: 10px;
+}
 
 .btn_lgn {
     margin-top: 5px;
@@ -372,7 +378,7 @@ li {
 .login input {
     border-radius: 7px;
     width: 80%;
-    margin: 20px auto;
+    margin: 70px auto;
 }
 /*--------------------Registry--------------------------*/
 

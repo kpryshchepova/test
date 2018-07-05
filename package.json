@@ -9,7 +9,7 @@
     "npm": "5.4.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "nano": "^6.4.3",
+    "nodemon": "^1.17.5",
     "request": "^2.85.0"
   },
   "author": "IBM Corp",
